@@ -21,14 +21,12 @@ function preload() {
 function setup() {
   width = 400;
   height = 500;
-  getDef();
-
   var canvas = createCanvas(width, height);
-
   canvas.parent('sketch-holder');
   word = wordnikWord[0].word.toUpperCase();
   console.log(wordnikWord);
   checkWord();
+  getDef();
   offsetLength = floor((width - (word.length * 10 + ((word.length - 1) * 5))) / 2);
   wordLetter = split(word, "");
   for (var i = wordLetter.length - 1; i >= 0; i--) {

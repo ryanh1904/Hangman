@@ -58,7 +58,7 @@ function getDef() {
   var path1 = "https://api.wordnik.com/v4/word.json/";
   var path2 = "/definitions?limit=200&includeRelated=true&sourceDictionaries=all&useCanonical=true&includeTags=false&api_key="
   var apiKey = "e1f5825d453522fca400802d88c09a83be4f1ba3b32ba624a";
-  wordnikDef = loadJSON(path1 + wordnikWord[0].word + path2 + apiKey);
+  wordnikDef = loadJSON(path1 + word + path2 + apiKey);
 }
 
 function showDef() {
